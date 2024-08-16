@@ -1,0 +1,595 @@
+
+
+@font-face {
+    font-family: 'latoregular';
+    src: url('../fonts/lato-regular-webfont.eot');
+    src: url('../fonts/lato-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato-regular-webfont.woff') format('woff'),
+         url('../fonts/lato-regular-webfont.ttf') format('truetype'),
+         url('../fonts/lato-regular-webfont.svg#latoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nixie_oneregular';
+    src: url('../fonts/nixieone-regular-webfont.eot');
+    src: url('../fonts/nixieone-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/nixieone-regular-webfont.woff') format('woff'),
+         url('../fonts/nixieone-regular-webfont.ttf') format('truetype'),
+         url('../fonts/nixieone-regular-webfont.svg#nixie_oneregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+a {
+    outline: none;
+    color: #007BFF; /* Azul forte para links */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #9deb0d; /* Azul mais escuro para hover */
+}
+
+img {
+    border: none;
+}
+
+p {
+    line-height: 30px;
+    margin: 0;
+}
+
+/*imagem da logo*/
+.logon{
+    width: 200px;
+    height: 200px;   
+    position: relative;
+    left: 100px;
+    
+}
+.inform{
+    background-color: #4A90E2;    
+    font-size: 300px;
+    font-style: inherit;
+
+}
+.inform:hover{
+    background-color: #2ECC71;
+    font-size: 350px;
+    font-family: fantasy;
+}
+
+#header {
+    margin: 0 auto;
+    max-width: 960px;
+    background-color: whitesmoke;
+    border: 1px solid #2ECC71;
+}
+
+#header h1 {
+    font-size: 50px;
+    font-weight: normal;
+    line-height: 50px;
+    margin: 0;
+    padding: 30px 0;
+    text-align: center;
+    color: #37f711; /* Azul forte para o cabeçalho */
+}
+
+#header h1 a {
+    color: #1d08db;
+    text-decoration: none;
+}
+
+#header h1 a span {
+    color: #e1f80c; /* Amarelo mais escuro para o subtítulo */
+    display: block;
+    font-family: 'nixie_oneregular';
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+#header ul#navigation {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#header ul#navigation li {
+    display: inline;
+    line-height: 30px;
+    position: relative;
+}
+
+#header ul#navigation li a {
+    color: #0056b3; /* Azul mais escuro para os links do menu */
+    font-size: 18px;
+    padding: 0 46px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#header ul#navigation li a:hover,
+#header ul#navigation li.current ul li a:hover {
+    color: #d3a3ff; /* Cor de hover original */
+}
+
+#header ul#navigation li.current a {
+    color: #007BFF; /* Azul forte para o item atual do menu */
+}
+
+#header ul#navigation li ul {
+    display: none;
+    left: 0;
+    list-style: none;
+    margin: 0;
+    padding: 11px 0 0;
+    position: absolute;
+    top: 12px;
+}
+
+#header ul#navigation li:hover ul {
+    display: block;
+}
+
+#header ul#navigation li ul li {
+    background: #077054; /* Cor de fundo original */
+    display: block;
+    height: 46px;
+    line-height: 46px;
+}
+
+#header ul#navigation li ul li a {
+    padding: 0 20px;
+    color: #fff; /* Texto branco para o submenu */
+}
+
+#header ul#navigation li.current ul li a {
+    color: #b6d8cf; /* Cor original */
+}
+
+#body {
+    background: #ffffff; /* Branco para o corpo */
+    margin: 1px auto 0;
+    max-width: 880px;
+    min-height: 827px;
+    overflow: hidden;
+    padding: 45px 40px 46px;
+}
+
+#body > h2 {
+    color: #007BFF; /* Azul forte para os títulos */
+    font-family: 'nixie_oneregular';
+    font-size: 35px;
+    font-weight: normal;
+    line-height: 30px;
+    margin: 0;
+    padding: 0 0 44px;
+}
+
+#footer {
+    background: #0712a7; /* Azul forte para o rodapé */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos específicos para os cartões */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background: #ffffff; /* Branco para os cartões */
+    border: 1px solid #007BFF; /* Azul forte para a borda dos cartões */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);	 /* Efeito de zoom ao passar o mouse */
+	background-color: rgb(198, 250, 9);
+	border:2px #fff solid;
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    color: #007BFF; /* Azul forte para o título do cartão */
+    font-size: 24px;
+    margin: 0 0 10px;
+}
+
+.card-text {
+    color: #333; /* Cor do texto do cartão */
+    font-size: 16px;
+    margin: 0 0 20px;
+}
+
+.btn {
+    background-color: #007BFF; /* Azul forte para os botões */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #07fd1b; /* Azul mais escuro para hover */
+}
+
+
+
+/*Post*/
+#postar{
+    background-color: #0056b3;
+}
+
+
+
+
+/* Estiliza o título */
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 200px;
+}
+
+/* Estiliza o container de conteúdo */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+/* Estiliza as listas */
+.section {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Estiliza os itens da lista */
+.section li {
+    flex: 1 1 calc(50% - 20px);
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajusta o tamanho das imagens */
+.section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Estiliza os títulos dentro dos itens da lista */
+.section h4 {
+    color: #555;
+}
+
+/* Estiliza a imagem principal */
+.figure {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 20px auto;
+}
+
+
+
+
+/* Estilos específicos para o formulário de contato */
+form {
+    background: #ffffff; /* Branco para o fundo do formulário */
+    border: 1px solid #007BFF; /* Azul forte para a borda do formulário */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form h3 {
+    color: #007BFF; /* Azul forte para o título do formulário */
+    font-size: 24px;
+    margin: 0 0 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 15px;
+}
+
+form label span {
+    display: block;
+    font-size: 16px;
+    color: #333; /* Cor do texto dos labels */
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form textarea {
+    border: 1px solid #007BFF; /* Azul forte para a borda dos campos */
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+form textarea {
+    resize: vertical; /* Permite redimensionar verticalmente */
+}
+
+form input[type="submit"] {
+    background-color: #007BFF; /* Azul forte para o botão de envio */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0056b3; /* Azul mais escuro para hover no botão de envio */
+}
+
+
+
+
+
+/* Estilo para o contêiner do blog */
+#bus {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Título do blog */
+#bus h2 {
+    font-size: 2rem;
+    color: #0044cc; /* Azul forte */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Estilo da lista de posts do blog */
+.blog {
+    list-style: none;
+}
+
+.blog li {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.blog li img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.blog li h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.blog li h3 a {
+    text-decoration: none;
+    color: #0044cc; /* Azul forte */
+}
+
+.blog li h3 a:hover {
+    text-decoration: underline;
+}
+
+.blog li span {
+    display: block;
+    font-size: 0.875rem;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.blog li p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Adiciona espaçamento extra para o último item da lista */
+.blog li:last-child {
+    margin-bottom: 0;
+}
+
+
+
+
+
+/* Estilo para a seção "Sobre" */
+#about {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo dos parágrafos */
+#about p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Destaque para o primeiro parágrafo */
+#about p:first-of-type {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #0044cc; /* Azul forte */
+    margin-bottom: 30px;
+}
+
+/* Adiciona uma borda e espaçamento ao redor do texto */
+#about p {
+    border-left: 4px solid #0044cc; /* Azul forte */
+    padding-left: 15px;
+    margin-left: 0;
+    background: #f9f9f9;
+    border-radius: 5px;
+}
+
+/* Estilo da área de conteúdo */
+#about {
+    position: relative;
+    overflow: hidden;
+}
+
+#about::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(90deg, rgba(0, 68, 204, 0.8), rgba(0, 68, 204, 0.5));
+}
+
+#about::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(-90deg, rgba(0, 68, 204, 0.8), rgba(0, 68, 204, 0.5));
+}
+
+/* Estilo de responsividade */
+@media (max-width: 768px) {
+    #about {
+        padding: 20px;
+    }
+
+    #about p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+}
+
+
+
+
+/* Estilo para a barra lateral (sidebar) */
+.sidebar {
+    width: 300px; /* Largura fixa para a sidebar */
+    padding: 20px;
+    background: #ffffff; /* Fundo branco */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin: 20px auto; /* Centraliza horizontalmente com margem vertical */
+}
+
+/* Título da barra lateral */
+.sidebar h3 {
+    font-size: 1.5rem;
+    color: #0044cc; /* Azul forte */
+    border-bottom: 2px solid #0044cc; /* Linha abaixo do título */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Lista de posts */
+.sidebar ul {
+    list-style: none; /* Remove marcadores padrão */
+}
+
+.sidebar li {
+    margin-bottom: 20px; /* Espaçamento entre os itens */
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0; /* Linha separadora suave */
+}
+
+/* Título dos posts */
+.sidebar h4 {
+    font-size: 1.2rem;
+    color: #333; /* Cor do texto dos títulos */
+    margin-bottom: 5px;
+}
+
+.sidebar h4 a {
+    text-decoration: none; /* Remove sublinhado dos links */
+    color: #0044cc; /* Azul forte para os links */
+    font-weight: bold; /* Destaque para o texto do link */
+}
+
+.sidebar h4 a:hover {
+    text-decoration: underline; /* Sublinhado ao passar o mouse */
+}
+
+/* Data dos posts */
+.sidebar span {
+    font-size: 0.875rem;
+    color: #888; /* Cor mais clara para a data */
+}
+
+/* Estilo de responsividade */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%; /* Largura total em dispositivos móveis */
+        padding: 15px;
+    }
+}

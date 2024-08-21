@@ -4,9 +4,12 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="user-scalable=0, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<title>Instructors - Belle &amp; Carrie Rehabilitation Yoga Web Template</title>
+	<title>©WandersonWeb</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/mobile.css">
+
+	<link rel="icon" href="images/favicon-16x16.png" type="image/x-icon">
+	<link rel="shortcut icon" href="images/favicon-16x16.png" type="image/x-icon">
 
 	<style>
         body {
@@ -20,6 +23,7 @@
 
 
 	<script type='text/javascript' src='js/mobile.js'></script>
+	<script type='text/javascript' src='js/scripts.js'></script>
 </head>
 <body>
 	<!--Cabeça com a logo-->
@@ -44,8 +48,6 @@
 				</ul>
 			</li>
 			<li>
-				<a href="contact.html">Contact</a>
-			</li>
 			<li>
 				<a href="blog.html">Blog</a>
 			</li>
@@ -87,43 +89,67 @@
 	</div>
 
 <!--Post-->
-	<div id="postar">
-		<h2>Análise e desenvolvimento de sistemas</h2>
-		<div class="content">
-			<div class="article">				
-				<span>April 5, 2021 </span>
-				<img src="images/cont.jpg" alt="Entre em contato">
-				<div id="about">
-					<p>
-						Na WandersonWeb, transformamos a forma como você se conecta com seu público e realiza seus objetivos. Nossa missão é elevar sua presença digital com soluções inovadoras e personalizadas, que combinam criatividade e tecnologia de ponta. Desde a concepção até a execução, nosso time se dedica a criar experiências online que não apenas atendem, mas superam suas expectativas.
-					</p>
-					<p>
-						Cada projeto é uma oportunidade para fazer a diferença. Combinamos estratégia inteligente com um design impressionante para entregar resultados que impactam e encantam. Nosso portfólio inclui desde a criação de sites envolventes até estratégias de marketing digital que garantem visibilidade e crescimento. Acreditamos na importância de um atendimento próximo e personalizado, garantindo que cada aspecto do seu projeto receba a atenção e a expertise que merece.
-					</p>
-					<p>
-						Venha descobrir como podemos transformar sua visão em realidade. Na WandersonWeb, não apenas acompanhamos as tendências do mercado, mas as definimos, oferecendo soluções que são tão dinâmicas e inovadoras quanto o seu negócio. Junte-se a nós e dê o próximo passo em sua jornada digital com confiança e estilo.
-					</p>
-				</div>
-				
-			<div class="sidebar">
-				<h3>Recent Posts</h3>
-				<ul>
-					<li>
-						<h4><a href="servicos.html">FTecnologia usada para florestar, florestania e cidadania. </a></h4>
-						<span>April 7, 2018 </span>
-					</li>
-					<li>
-						<h4><a href="servicos.html">Sistema de segurança.</a></h4>
-						<span>june 6, 2020 </span>
-					</li>
-					<li>
-						<h4><a href="servicos.html">Sistemas Web</a></h4>
-						<span>december 5, 2023 </span>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
+<div id="postar" class="postar-container">
+    <h2 class="postar-title">Análise e Desenvolvimento de Sistemas</h2>
+    
+    <!-- Mini-slider -->
+    <div class="slider-container">
+        <div class="slider">
+            <img src="images/distaquerecruta.jpg" alt="O melhor virá">
+            <img src="images/escolharecruta.jpg" alt="Inovação e Tecnologia">
+            <img src="images/sistema1.jpg" alt="Soluções Personalizadas">
+        </div>
+        <div class="slider-navigation">
+            <span class="prev">&#10094;</span>
+            <span class="next">&#10095;</span>
+        </div>
+    </div>
+
+    <h3 class="postar-subtitle"><a href="infra.html">Inacreditável</a></h3>
+    <span class="postar-date">April 6, 2023</span>
+
+    <div class="content">
+        <div class="article">
+            <img src="images/cont.jpg" alt="Entre em contato" class="article-image">
+            <div id="about">
+                <p class="about-text">
+                    Na WandersonWeb, transformamos a forma como você se conecta com seu público e realiza seus objetivos. Nossa missão é elevar sua presença digital com soluções inovadoras e personalizadas, que combinam criatividade e tecnologia de ponta.
+                </p>
+                <p class="about-text">
+                    Combinamos estratégia inteligente com um design impressionante para entregar resultados que impactam e encantam. Nosso portfólio inclui desde a criação de sites envolventes até estratégias de marketing digital que garantem visibilidade e crescimento.
+                </p>
+                <p class="about-text">
+                    Venha descobrir como podemos transformar sua visão em realidade. Junte-se a nós e dê o próximo passo em sua jornada digital com confiança e estilo.
+                </p>
+            </div>
+        </div>
+        <div class="sidebar">
+            <h3 class="sidebar-title">Recent Posts</h3>
+            <ul class="sidebar-list">
+                <li class="sidebar-item">
+                    <h4><a href="servicos.html">Tecnologia usada para florestar, florestania e cidadania.</a></h4>
+                    <span>April 7, 2018</span>
+                </li>
+                <li class="sidebar-item">
+                    <h4><a href="servicos.html">Sistema de segurança.</a></h4>
+                    <span>June 6, 2020</span>
+                </li>
+                <li class="sidebar-item">
+                    <h4><a href="servicos.html">Sistemas Web</a></h4>
+                    <span>December 5, 2023</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+	<!--Botão WatsApp-->
+
+	<a href="https://api.whatsapp.com/send?phone=5561999788904&text=Olá, venho do site!%20Gostaria%20de%20mais%20informações." class="whatsapp-button" target="_blank">
+		<img src="images/botao-whatsapp.gif" alt="WhatsApp">
+		Fale Conosco
+	</a>
 
 
 
